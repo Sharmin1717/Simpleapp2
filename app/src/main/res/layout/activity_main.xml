@@ -27,4 +27,11 @@
         android:layout_height="wrap_content"
         android:text="Click Here"
         android:layout_marginTop="16dp"/>
+    <Button
+        android:id="@+id/openSecondActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go to Second Activity"
+        android:layout_marginTop="20dp" />
+
 </LinearLayout>
