@@ -33,5 +33,12 @@
         android:layout_height="wrap_content"
         android:text="Go to Second Activity"
         android:layout_marginTop="20dp" />
+    <Button
+        android:id="@+id/openFormActivity"
+        android:text="Open Form Activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
 
 </LinearLayout>
