@@ -1,3 +1,21 @@
 <resources>
-    <string name="app_name">SimpleAPP2</string>
+    <!-- res/values/strings.xml -->
+    <string name="app_name">SimpleApp2</string>
+    <string name="food_title_pizza">Pizza</string>
+    <string name="food_title_burger">Burger</string>
+    <string name="food_title_pasta">Pasta</string>
+    <string name="food_description_pizza">Cheesy and delicious pizza</string>
+    <string name="food_description_burger">Juicy beef burger</string>
+    <string name="food_description_pasta">Creamy pasta</string>
+
+    <!-- Strings for FoodCategoriesActivity -->
+    <string name="category_fruits">Fruits</string>
+    <string name="category_vegetables">Vegetables</string>
+    <string name="fruits_apple">Apple</string>
+    <string name="fruits_banana">Banana</string>
+    <string name="vegetables_carrot">Carrot</string>
+    <string name="vegetables_broccoli">Broccoli</string>
+
+
+
 </resources>

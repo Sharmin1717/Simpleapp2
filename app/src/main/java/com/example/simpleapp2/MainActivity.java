@@ -3,37 +3,47 @@ package com.example.simpleapp2;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
-import android.widget.Toast; // Corrected import statement
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button openSecondActivity;
-    private Button clickHereButton;
-    private Button openFormActivity;
+    // Declare buttons for navigation
+    private Button openSecondActivity, openFormActivity, openFoodActivity, openFoodCategoriesActivity;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Button to open the second activity
+        // Initialize buttons
         openSecondActivity = findViewById(R.id.openSecondActivity);
-        clickHereButton = findViewById(R.id.button); // Reference to "Click Here" button
-        openFormActivity = findViewById(R.id.openFormActivity); // Add reference to the FormActivity button
+        openFormActivity = findViewById(R.id.openFormActivity);
+        openFoodActivity = findViewById(R.id.openFoodActivity);
+        openFoodCategoriesActivity = findViewById(R.id.openFoodCategoriesActivity);
 
+        // Set listeners for buttons
+
+        // Navigate to SecondActivity
         openSecondActivity.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, SecondActivity.class);
             startActivity(intent);
         });
 
-        // Set a toast message for the "Click Here" button
-        clickHereButton.setOnClickListener(v -> {
-            Toast.makeText(MainActivity.this, "Button clicked!", Toast.LENGTH_SHORT).show();
-        });
-
+        // Navigate to FormActivity
         openFormActivity.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, FormActivity.class);
+            startActivity(intent);
+        });
+
+        // Navigate to FoodActivity (ListView)
+        openFoodActivity.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, FoodActivity.class);
+            startActivity(intent);
+        });
+
+        // Navigate to FoodCategoriesActivity (ExpandableListView)
+        openFoodCategoriesActivity.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, FoodCategoriesActivity.class);
             startActivity(intent);
         });
     }
