@@ -3,12 +3,13 @@ package com.example.simpleapp2;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
     // Declare buttons for navigation
-    private Button openSecondActivity, openFormActivity, openFoodActivity, openFoodCategoriesActivity;
+    private Button openSecondActivity, openFormActivity, openFoodActivity, openFoodCategoriesActivity, openProductRecyclerViewActivity;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
         openFormActivity = findViewById(R.id.openFormActivity);
         openFoodActivity = findViewById(R.id.openFoodActivity);
         openFoodCategoriesActivity = findViewById(R.id.openFoodCategoriesActivity);
+        openProductRecyclerViewActivity = findViewById(R.id.openProductRecyclerViewActivity);
 
         // Set listeners for buttons
 
@@ -44,6 +46,12 @@ public class MainActivity extends AppCompatActivity {
         // Navigate to FoodCategoriesActivity (ExpandableListView)
         openFoodCategoriesActivity.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, FoodCategoriesActivity.class);
+            startActivity(intent);
+        });
+
+        // Navigate to ProductRecyclerViewActivity (RecyclerView)
+        openProductRecyclerViewActivity.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, ProductRecyclerViewActivity.class);
             startActivity(intent);
         });
     }

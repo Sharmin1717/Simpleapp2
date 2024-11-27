@@ -16,6 +16,23 @@
     <string name="vegetables_carrot">Carrot</string>
     <string name="vegetables_broccoli">Broccoli</string>
 
+    <string name="product_recycler_view_title">Product Showcase</string>
+
+    <!-- Product Description -->
+    <string name="product_description_title">Product Description</string>
+    <string name="product_price_label">Price: </string>
+
+    <!-- Sample Product Data -->
+    <string name="product_laptop_name">Laptop</string>
+    <string name="product_laptop_description">High-performance laptop</string>
+    <string name="product_smartphone_name">Smartphone</string>
+    <string name="product_smartphone_description">Latest Android smartphone</string>
+    <string name="product_headphone_name">Headphones</string>
+    <string name="product_headphone_description">Noise-cancelling headphones</string>
+
+    <!-- Button and other text -->
+    <string name="button_view_product">View Product</string>
+
 
 
 </resources>
