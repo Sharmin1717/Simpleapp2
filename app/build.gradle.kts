@@ -29,6 +29,8 @@ android {
 }
 
 dependencies {
+    implementation("androidx.recyclerview:recyclerview:1.3.1") // RecyclerView dependency
+    implementation("androidx.cardview:cardview:1.0.0")         // CardView dependency
 
     implementation(libs.appcompat)
     implementation(libs.material)
